@@ -26,5 +26,40 @@ namespace GratitudeApi.Controllers
             }
             return new ObjectResult(note);
         }
+
+        [HttpPost]
+        public IActionResult Create([FromBody] Note note)
+        {
+            if (note == null)
+            {
+                return HttpBadRequest();
+            }
+            Notes.Add(note);
+            return CreatedAtRoute("GetNote", new {controller = "Notes", id = note.Key}, note);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(string id, [FromBody] Note note)
+        {
+            if (note == null)
+            {
+                return HttpBadRequest();
+            }
+
+            var existingNote = Notes.Find(id);
+            if (existingNote == null)
+            {
+                return HttpNotFound();
+            }
+
+            Notes.Update(note);
+            return new NoContentResult();
+        }
+
+        [HttpDelete("{id}")]
+        public void Delete(string id)
+        {
+            Notes.Remove(id);
+        }
     }
 }

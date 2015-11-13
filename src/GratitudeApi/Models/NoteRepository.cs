@@ -8,6 +8,16 @@ namespace GratitudeApi.Models
     {
         private static readonly ConcurrentDictionary<string, Note> Notes = new ConcurrentDictionary<string, Note>();
 
+        public NoteRepository()
+        {
+            var note = new Note
+            {
+                Name = "Thankful to Microsoft",
+                Description = "I am thankful to Microsoft for creating ASP.NET."
+            };
+            Add(note);
+        }
+
         public void Add(Note note)
         {
             note.Key = Guid.NewGuid().ToString();
