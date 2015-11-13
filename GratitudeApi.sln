@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BCA139F7-4F3D-49D6-86DF-8041834A531E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{26DE855E-3B4B-434F-8973-31A348EAB3BF}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "GratitudeApi", "src\GratitudeApi\GratitudeApi.xproj", "{D776D96F-EC7A-485D-B6DD-1DE8FB9CDF94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D776D96F-EC7A-485D-B6DD-1DE8FB9CDF94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D776D96F-EC7A-485D-B6DD-1DE8FB9CDF94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D776D96F-EC7A-485D-B6DD-1DE8FB9CDF94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D776D96F-EC7A-485D-B6DD-1DE8FB9CDF94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D776D96F-EC7A-485D-B6DD-1DE8FB9CDF94} = {BCA139F7-4F3D-49D6-86DF-8041834A531E}
+	EndGlobalSection
+EndGlobal
